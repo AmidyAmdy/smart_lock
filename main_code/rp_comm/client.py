@@ -8,7 +8,6 @@ import asyncio
 from config import TARGET_HOST, TARGET_PORT, CHAT_ID
 
 async def choice():
-    print("choice func")
     client = None
     try:
         loop = asyncio.get_event_loop()
@@ -52,4 +51,5 @@ async def choice():
         print(f'Ошибка в choice: {e}')
     finally:
         if client:
+
             client.close()
