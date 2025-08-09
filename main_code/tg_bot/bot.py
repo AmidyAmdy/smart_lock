@@ -17,7 +17,7 @@ class AddFaceState(StatesGroup):
     Name = State()
     Face = State()
 
-token = '7593026254:AAFnFqgOyn-zohMsDH_SOHwtWsz_uiXZz3M'
+token = '...'
 
 logging.basicConfig(level=logging.INFO)
 
@@ -131,3 +131,4 @@ async def on_startup(dp):
 if __name__ == "__main__":
     from aiogram import executor
     executor.start_polling(dp, skip_updates=True, on_startup=on_startup)
+
